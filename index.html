@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenland Polytechnic Institute</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    console.log('Page is loading...');
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #005b8f;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background-color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .campus-photo {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .departments {
+      background-color: #eef6fa;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .departments h2 {
+      margin-bottom: 20px;
+      color: #005b8f;
+    }
+
+    .departments ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .departments li {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #003d5b;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .departments li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body onload="console.log('Body loaded successfully.')">
+  <header>
+    <div class="container">
+      <img src="Logo.png" alt="Greenland Logo" class="logo" onerror="console.error('Logo image failed to load.')">
+      <h1>Greenland Polytechnic Institute</h1>
+      <p>Amulia Model Town, Demra, Dhaka</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="Campus Image.jpg" alt="Campus Photo" class="campus-photo" onerror="console.error('Campus photo failed to load.')">
+      <h2>Welcome to Greenland Polytechnic Institute</h2>
+      <p>A modern technical institute dedicated to developing the engineers of tomorrow.</p>
+    </div>
+  </section>
+
+  <section class="departments">
+    <div class="container">
+      <h2>Our Departments</h2>
+      <ul>
+        <li onclick="console.log('Computer Technology clicked')">Computer Technology</li>
+        <li onclick="console.log('Civil Technology clicked')">Civil Technology</li>
+        <li onclick="console.log('Electrical Technology clicked')">Electrical Technology</li>
+        <li onclick="console.log('Mechanical Technology clicked')">Mechanical Technology</li>
+        <li onclick="console.log('Automobile Technology clicked')">Automobile Technology</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Greenland Polytechnic Institute. All rights reserved.</p>
+      <p>Created By 7th Semester, Session:- 2021-22, Department: CST</p>
+    </div>
+  </footer>
+</body>
+</html>
